@@ -91,7 +91,7 @@ class PointCollector:
             
             fig, ax = plt.subplots(figsize=(12, 8))
             ax.imshow(slice_data)
-            ax.set_title(f'Slice {z}/{z_axis_length}. Double click to select point.')
+            ax.set_title(f'Slice {z}/{z_axis_length}. Click to select the umbilicus point.')
             
             fig.canvas.mpl_connect('button_press_event', self.onclick)
             plt.show()
