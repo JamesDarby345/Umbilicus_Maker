@@ -3,6 +3,7 @@ This repo provides .json files that specify umbilicus points for each of the maj
 The .json files were created by clicking on the approximate umbilicus point every 500 voxels along the z-axis as well as the last z-axis slice.
 They are in *zyx* point format, and the scan is specified in the file name. 
 For most users, the completed .json files are all that is needed.
+There are also .obj files created from the .json files in the umbilicus_obj folder, which can be used to visualize the umbilicus points in a 3d viewer. They are esssentially a line.
 
 ## Why umbilicus points are useful
 
@@ -63,6 +64,12 @@ python umbilicus_maker_cache.py --sid 1 --energy 54 --res 7.91 --local_zarr_path
 
 ### Output
 The scripts generate a JSON file named `s{id}{AB}_{energy}kev_{res}um_zyx_umbilicus_points.json` containing the clicked points in [z,y,x] format.
+
+### Obj conversion
+The points_to_obj.py script can be used to convert the .json files to .obj files in the umbilicus_obj folder.
+```bash
+python points_to_obj.py
+```
 
 ### Maintenance
 This is built on top of the vesuvius package, so if they release a new version, this code will need to be updated to work with the new version.
