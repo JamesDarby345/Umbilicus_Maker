@@ -3,8 +3,7 @@ channels:
   - defaults
   - conda-forge
 dependencies:
- - python
+ - python=3.12
  - pip:
-   - zarr
    - vesuvius
    - matplotlib

@@ -1,3 +1,2 @@
-zarr
 vesuvius
 matplotlib

@@ -3,7 +3,6 @@ import json
 import argparse
 from matplotlib.backend_bases import MouseButton
 import vesuvius
-import zarr
 
 class PointCollector:
     def __init__(self, scroll_volume, step=500, sname='', zpos=2):
@@ -55,6 +54,7 @@ def main():
     parser.add_argument('--step', type=int, default=500, help='Step size between z slices to specify points')
     parser.add_argument('--local_zarr_path', default='', help='Local path to zarr file')
     parser.add_argument('--zpos', type=int, default=0, help='position of z axis in the data shape; 0=[z,:,:], 1=[:,z,:], 2=[:,:,z] the axis to make the umbilicus across')
+    parser.add_argument('--AB', default='', help='Scroll A or B scan if relevant for json naming,just append string val after s#')
     args = parser.parse_args()
 
     if args.local_zarr_path:
@@ -63,7 +63,7 @@ def main():
     else:
         scroll = vesuvius.Volume(type="scroll", scroll_id=args.sid, energy=args.energy, resolution=args.res)
 
-    scroll_name = 's'+args.sid+'_'+str(args.energy)+'kev_'+str(args.res)+'um'
+    scroll_name = 's'+args.sid+args.AB+'_'+str(args.energy)+'kev_'+str(args.res)+'um'
     print("scroll name ", scroll_name)
     print("z position is ", args.zpos, " scroll shape is ", scroll.shape())
     collector = PointCollector(scroll, step=args.step, sname=scroll_name, zpos=args.zpos)
