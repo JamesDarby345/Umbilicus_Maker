@@ -1,0 +1,10 @@
+name: umbilicus_maker
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+ - python
+ - pip:
+   - zarr
+   - vesuvius
+   - matplotlib
