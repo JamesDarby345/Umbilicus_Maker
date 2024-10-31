@@ -4,8 +4,8 @@ The .json files were created by clicking on the approximate umbilicus point ever
 They are in *zyx* point format, and the scan is specified in the file name. 
 For most users, the completed .json files are all that is needed.
 There are also .obj files created from the .json files in the umbilicus_obj folder, which can be used to visualize the umbilicus points in a 3d viewer. They are esssentially a line. These are also z,y,x format.<br>
-<img width="803" alt="Screenshot 2024-10-31 at 4 58 34 PM" src="https://github.com/user-attachments/assets/6c7d1f78-2f34-4840-aae7-8b0cec6d029d"><br>
-Visualisation of umbillicus point .obj connected as a line
+<img width="400" alt="Screenshot 2024-10-31 at 4 58 34 PM" src="https://github.com/user-attachments/assets/6c7d1f78-2f34-4840-aae7-8b0cec6d029d"><br>
+Visualisation of umbillicus point .obj for scroll 1 as a line.
 
 ## Why umbilicus points are useful
 
