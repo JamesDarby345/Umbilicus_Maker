@@ -3,7 +3,7 @@ This repo provides .json files that specify umbilicus points for each of the maj
 The .json files were created by clicking on the approximate umbilicus point every 500 voxels along the z-axis as well as the last z-axis slice.
 They are in *zyx* point format, and the scan is specified in the file name. 
 For most users, the completed .json files are all that is needed.
-There are also .obj files created from the .json files in the umbilicus_obj folder, which can be used to visualize the umbilicus points in a 3d viewer. They are esssentially a line.
+There are also .obj files created from the .json files in the umbilicus_obj folder, which can be used to visualize the umbilicus points in a 3d viewer. They are esssentially a line. These are also z,y,x format.
 
 ## Why umbilicus points are useful
 

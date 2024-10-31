@@ -19,7 +19,7 @@ def json_to_obj(json_path):
     with open(output_name, 'w') as f:
         # Write vertices
         for i, (z, y, x) in enumerate(points, 1):
-            f.write(f'v {x} {y} {z}\n')
+            f.write(f'v {z} {y} {x}\n')
         
         # Write edges connecting consecutive points
         for i in range(1, len(points)):
