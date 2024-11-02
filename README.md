@@ -1,3 +1,9 @@
+# Update:
+This repo was created to make umbilicus files quickly and distribute them for most of the scans. Demand for more accurate umbilicus files was discovered after posting on the [discord](https://discord.com/channels/1079907749569237093/1301676351157309581/1301680604303200336) after thinking about how to make the best software for that task. I realised khartes pretty much was that software, so I wrote an [SOP on how to use (/abuse) khartes for that task.](https://docs.google.com/document/d/1a6p_b3ZjL1qjVLWKO7h1Pgv-huET0NSk6Gs_rCHa9W0/edit?usp=sharing)
+
+If you want approximate umbilicus points sampled every 500 z-axis slices for experimentation for most of the scans, they are available in this repo, and this repo can create them with minimal setup & hassle. If you want to make more accurate umbilicus files that dont switch sheets for instance, use khartes and read the SOP link above on how to do it.
+
+
 ## Purpose of this repo
 This repo provides .json files that specify umbilicus points for each of the major released scroll scans as of october 2024 in the umbilicus_points folder.<br>
 The .json files were created by clicking on the approximate umbilicus point every 500 voxels along the z-axis as well as the last z-axis slice.
